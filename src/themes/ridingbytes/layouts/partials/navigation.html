@@ -1,0 +1,18 @@
+<div id="mobnav-btn"><i class="fa fa-bars"></i></div>
+<nav id="main-menu" class="site-navigation primary-navigation" role="navigation">
+  <ul class="sf-menu clearfix" id="example">
+     {{ range .Site.Params.navigation.list }}
+     <li>
+       <a href="{{ .href }}">{{ .title }}</a>
+       {{ if isset . "submenu" }}
+       <div class="mobnav-subarrow"></div>
+       <ul class="submenu">
+           {{ range .submenu }}
+           <li><a href="{{index . 0}}" class="page-scroll">{{ index . 1}}</a></li>
+           {{ end }}
+       </ul>
+       {{ end }}
+     </li>
+     {{ end }}
+  </ul>
+</nav>

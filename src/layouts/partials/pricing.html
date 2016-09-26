@@ -1,0 +1,45 @@
+{{ with .Site.Params.pricing }}
+
+<h2 class="hp-section-title">{{ .title }}</h2>
+<h3 class="hp-section-description">{{ .description }}</h3>
+
+<!-- Decorative arrow -->
+<div class="down-arrow fadeIn">&nbsp;</div>
+<!-- /Decorative arrow -->
+
+<div class="dividewhite6"></div>
+
+<div class="container">
+  <div class="row">
+
+    {{ range .list }}
+    <!-- price box -->
+    <div class="col-md-3">
+      <div class="{{ .cls }}">
+        <div class="price-attrs">
+          <div class="price-number font-accident-one-bold">{{ .title }}</div>
+          <div class="price-plan font-accident-one-bold"><strong>{{ .subtitle }}</strong></div>
+          <div class="price-descr"><strong>{{ .discount }}</strong><br/>{{ .description }}</div>
+          <div class="price-conclusion">{{ .subdescription }}</div>
+        </div>
+
+        {{ if isset . "details" }}
+        <ul>
+            {{ range .details }}
+            <li>{{ index . 0 }}</li>
+            {{ end }}
+        </ul>
+        {{ end }}
+
+        <a href="/#services" class="btn btn-light page-scroll">Show All Services</a>
+
+      </div>
+      <div class="dividewhite4"></div>
+    </div>
+    <!-- /price-box -->
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}
+

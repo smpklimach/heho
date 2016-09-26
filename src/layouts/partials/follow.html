@@ -1,0 +1,20 @@
+{{ with .Site.Params.follow }}
+<div class="infoblock">
+  <!-- Follow us Widget -->
+  <h2 class="font-accident-one-bold"> {{ .title }} </h2>
+  <div class="follow">
+
+    {{ range .list }}
+    <div class="follow-element">
+      <div class="follow-icon"><i class="{{ .cls }}"></i></div>
+      <div class="follow-descr">
+        <div class="follow-social"><a href="{{ .href }}">{{ .title }}</a></div>
+        <!--<div class="follow-numb">324</div>-->
+      </div>
+    </div>
+    <div class="dividewhite1"></div>
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}

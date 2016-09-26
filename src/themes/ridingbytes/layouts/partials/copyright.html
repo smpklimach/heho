@@ -1,0 +1,21 @@
+<div id="copyrights-wrapper">
+  <div class="container">
+    <div class="copyright">
+      <div class="copy-attrs">
+        &copy; {{ .Site.Params.copyright.year }}
+        <a href="/" target="_blank">{{ .Site.Title }}</a>. {{ .Site.Params.copyright.text }}
+      </div>
+
+      {{ range .Site.Params.copyright.links }}
+      <div class="copy-link">
+        <a href="{{ .url }}">{{ .title }}</a>
+      </div>
+      {{ end }}
+
+      <!-- Piwik analytics widget -->
+      {{ partial "piwik.html" . }}
+      <!-- /Piwik analytics widget -->
+
+    </div>
+  </div>
+</div>

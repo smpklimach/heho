@@ -1,0 +1,48 @@
+{{ with .Site.Params.slider }}
+<div class="tp-banner-container">
+  <div class="tp-banner" >
+    <ul>
+      {{ range .slides }}
+      <!-- SLIDE  -->
+      <li data-transition="boxfade" data-slotamount="1" data-masterspeed="1000" data-thumb=""  data-saveperformance="off"  data-title="Slide">
+         <!-- MAIN IMAGE -->
+         <img src="{{ .Site.BaseURL }}img/slides/{{ .img }}" alt="{{ .alt }}"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+         {{ range .layers }}
+         <div class="tp-caption lfb ltt tp-resizeme rs-parallaxlevel-1"
+              data-x="center"
+              data-y="{{ .y }}"
+              data-speed="600"
+              data-start="{{ .start }}"
+              data-easing="Power4.easeOut"
+              data-splitin="none"
+              data-splitout="none"
+              data-elementdelay="0.01"
+              data-endelementdelay="0.1"
+              data-endspeed="500"
+              data-endeasing="Power4.easeIn"
+              style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
+
+           <!-- Image -->
+           {{ if isset . "img" }}
+             <img src="{{ .Site.BaseURL }}img/slides/layers/{{ .img }}" alt="{{ .alt }}">
+           {{ else if isset . "title" }}
+             <h1 class="{{ .cls }}">{{ .title }}</h1>
+           {{ else if isset . "description" }}
+             <h2 class="{{ .cls }}">{{ .description }}</h2>
+           {{ else if isset . "text" }}
+             <p class="{{ .cls }}">{{ .text }}</hp>
+           {{ else if isset . "link" }}
+           <a href="{{ .href }}" class="{{ .cls }}">{{ .link }}</a>
+           {{ end }}
+         </div>
+
+         {{ end }}
+
+      </li>
+      {{ end }}
+    </ul>
+    <div class="tp-bannertimer"></div>
+  </div>
+</div>
+{{ end }}

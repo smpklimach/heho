@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9]>  <html class="ie9" lang="en">    <![endif]-->
+<!--[if IE 8]>  <html class="ie8" lang="en">    <![endif]-->
+  <head>
+    <!-- head -->
+    {{ partial "head.html" . }}
+    <!-- /head -->
+  </head>
+
+  <body class="template-blog-page-single">
+
+    <!-- sub-top -->
+    <div id="sub-top-light">
+      <div class="container">
+        <div class="top-contacts">
+          {{ partial "top.html" . }}
+        </div>
+      </div>
+     </div>
+    <!-- /sub-top -->
+
+    <!-- main-top -->
+    <header id="header-wrapper-mp" class="sticky-menu-light blog-page-single">
+
+      <div class="sticky-header header-light" role="navigation">
+        <div class="container mp-nav">
+
+          <!-- Site Logo -->
+          {{ partial "logo.html" . }}
+          <!-- /Site Logo -->
+
+          <!-- Navigation -->
+          {{ partial "navigation.html" . }}
+          <!-- /Navigation -->
+
+        </div>
+      </div>
+
+      <!-- Header -->
+      {{ partial "header-blogpost.html" . }}
+      <!-- /Header -->
+
+    </header>
+    <!-- /main-top -->
+
+    <!-- main content -->
+    <div id="content">
+
+      <!-- center page header and description -->
+      <!--<div class="e-block-centered">
+        <h2 class="hp-section-title">{{ .Title }}</h2>
+        <h3 class="hp-section-description">{{ .Description }}</h3>
+      </div>-->
+
+      <!-- Decorative arrow -->
+      <div class="down-arrow">&nbsp;</div>
+      <!-- /Decorative arrow -->
+
+      <div class="container">
+        <div class="row">
+          <!-- page content -->
+          <div class="col-md-12 post-content">
+            {{ .Content }}
+            <!-- facebook feed -->
+            {{ partial "facebook.html" .}}
+            <!-- /facebook feed -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 post-content">
+            <!-- Disqus Support -->
+            {{ partial "disqus.html" . }}
+            <!-- /Disqus Support -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /main content -->
+
+    <!-- Google Map -->
+    <a class="gm-toggle-link">
+      <div class="gm-toggle">
+        <i class="fa fa-map-marker"></i>
+      </div>
+    </a>
+    <div id="gm-panel">
+        <div id="google-map" class="bigmap"></div>
+    </div>
+    <!-- /Google Map -->
+
+    <!-- footer -->
+    <div id="footer">
+      <!-- footer widget -->
+      {{ partial "footer.html" . }}
+
+      <!-- copyright & additional footer links -->
+      {{ partial "copyright.html" . }}
+    </div>
+    <!-- /footer -->
+
+    <!-- Back to Top -->
+    <div id="back-top"><a href="#top"></a></div>
+    <!-- /Back to Top -->
+
+  </body>
+</html>

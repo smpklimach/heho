@@ -1,0 +1,47 @@
+{{ with .Site.Params.contact }}
+<div class="infoblock">
+  <h2 class="font-accident-one-bold">{{ .title }}</h2>
+
+  <!-- contact sections -->
+  <div class="contact">
+
+    <!-- Address -->
+    {{ if isset . "address" }}
+    <div class="footer-addr">
+      <div class="footer-icon"><i class="fa fa-home"></i></div>
+      <div class="addr-text">{{ .address }}</div>
+    </div>
+    {{ end }}
+
+    <!-- Phone -->
+    {{ if isset . "phone" }}
+    <div class="dividewhite1"></div>
+    <div class="footer-addr">
+      <div class="footer-icon"><i class="fa fa-phone"></i></div>
+      <div class="addr-text"><a href="tel:{{ .phone }}">{{ .phone }}</a></div>
+    </div>
+    {{ end }}
+
+    <!-- Web -->
+    {{ if isset . "web" }}
+    <div class="dividewhite1"></div>
+    <div class="footer-addr">
+      <div class="footer-icon"><i class="fa fa-link"></i></div>
+      <div class="addr-text"><a href="{{ .web }}">{{ .web }}</a></div>
+    </div>
+    {{ end }}
+
+    <!-- Email -->
+    {{ if isset . "email" }}
+    <div class="dividewhite1"></div>
+    <div class="footer-addr">
+      <div class="footer-icon"><i class="fa fa-envelope"></i></div>
+      <div class="addr-text"><a href="mailto:{{ .email }}">{{ .email }}</a></div>
+    </div>
+    {{ end }}
+
+  </div>
+  <!-- /contact sections -->
+
+</div>
+{{ end }}

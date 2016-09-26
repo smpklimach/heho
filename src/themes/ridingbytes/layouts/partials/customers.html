@@ -1,0 +1,34 @@
+{{ with .Site.Params.customers }}
+
+<h2 class="hp-section-title">{{ .title }}</h2>
+<h3 class="hp-section-description">{{ .description }}</h3>
+
+<!-- Decorative arrow -->
+<div class="down-arrow fadeIn">&nbsp;</div>
+<!-- /Decorative arrow -->
+
+<div class="dividewhite6"></div>
+
+<div class="container">
+  <div class="row">
+
+    {{ range .list }}
+    <!-- customer -->
+    <div class="col-md-4 infoblock client">
+      <div class="item-wrap">
+        <a href="{{ .href }}" target="_blank">
+          <div class="client-logo">
+            <img src="img/logos/{{ .logo }}" class="img-responsive img-centered" alt="">
+          </div>
+        </a>
+        <h4 class="font-accident-one-light uppercase"><a href="{{ .href }}" target="_blank">{{ .name }}</a></h4>
+        <p class="text-muted">{{ .description }}</p>
+      </div>
+    </div>
+    <!-- /customer -->
+    {{ end }}
+
+
+  </div>
+</div>
+{{ end }}

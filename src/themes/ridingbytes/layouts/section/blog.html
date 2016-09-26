@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9]>  <html class="ie9" lang="en">    <![endif]-->
+<!--[if IE 8]>  <html class="ie8" lang="en">    <![endif]-->
+  <head>
+    <!-- head -->
+    {{ partial "head.html" . }}
+    <!-- /head -->
+  </head>
+
+  <body class="template-blog-section">
+
+    <!-- sub-top -->
+    <div id="sub-top-light">
+      <div class="container">
+        <div class="top-contacts">
+          {{ partial "top.html" . }}
+        </div>
+      </div>
+     </div>
+    <!-- /sub-top -->
+
+    <!-- main-top -->
+    <header id="header-wrapper-mp" class="sticky-menu-light section-blog">
+
+      <div class="sticky-header header-light" role="navigation">
+        <div class="container mp-nav">
+
+          <!-- Site Logo -->
+          {{ partial "logo.html" . }}
+          <!-- /Site Logo -->
+
+          <!-- Navigation -->
+          {{ partial "navigation.html" . }}
+          <!-- /Navigation -->
+
+        </div>
+      </div>
+
+      <!-- Header -->
+      {{ partial "header-blog.html" . }}
+      <!-- /Header -->
+
+    </header>
+    <!-- /main-top -->
+
+    <!-- main content -->
+    <div id="content">
+
+      <!-- Decorative arrow -->
+      <div class="down-arrow">&nbsp;</div>
+      <!-- /Decorative arrow -->
+
+      <div id="blog" class="e-block e-block-skin">
+
+        <div class="container">
+
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-11">
+                <div id="tertiary">
+                  <div id="secondary-sidebar" class="primary-sidebar widget-area" role="complementary">
+                    <!-- twitter feed -->
+                    {{ partial "twitter.html" .}}
+                    <!-- /twitter feed -->
+
+                    <!-- post categories -->
+                    <div class="widget">
+                      <div class="widget_categories">
+                        <h4 class="font-accident-one-bold uppercase">Categories</h4>
+                        <ul>
+                          {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                          <li class="cat-item">
+                            <a href="/categories/{{ $name | urlize }}">{{ $name }}</a>
+                          </li>
+                          {{ end }}
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- /post categories -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- blog content column -->
+          <div class="col-md-9">
+            <div id="primary" role="main">
+
+              {{ range .Data.Pages }}
+              <!-- single blog post -->
+              <article class="post">
+                <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <!-- Blog post attributes #2 -->
+                <div class="post-attrib">
+                  <div class="comment-baloon">
+                    <a href="{{ .RelPermalink }}#disqus_thread">0</a>
+                  </div>
+                  <div class="post-data">
+                    <div class="post-date">{{ dateFormat .Site.Params.dateformat .Date }}</div>
+                    <div class="post-author">by {{ .Params.author }}</div>
+                  </div>
+                  <p>{{ .Params.summary }}</p>
+                </div>
+                <!-- /Blog post attributes #2 -->
+
+                <!-- Post Content -->
+                <!--<div class="post-content">{{ .Summary }}</div>-->
+                <div class="post-content">
+                  {{ if isset .Params "img" }}
+                  <a href="{{ .RelPermalink }}">
+                    <img src="/media/blog/{{ .Params.img }}" width="85%">
+                  </a>
+                  {{ end }}
+                  <div class="text-muted">Approx. Reading Time: {{ .ReadingTime }} minute(s)</div>
+                </div>
+                <!-- /Post Content -->
+                <a role="button" href="{{ .RelPermalink }}" class="btn btn-default btn-lgr-str">Read More</a>
+              </article>
+              {{ end }}
+              <!-- /single blog post -->
+            </div>
+          </div>
+          <!-- /blog content column -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Google Map -->
+    <a class="gm-toggle-link">
+      <div class="gm-toggle">
+          <i class="fa fa-map-marker"></i>
+      </div>
+    </a>
+    <div id="gm-panel">
+        <div id="google-map" class="bigmap"></div>
+    </div>
+    <!-- /Google Map -->
+
+    <!-- footer -->
+    <div id="footer">
+      <!-- footer widget -->
+      {{ partial "footer.html" . }}
+
+      <!-- copyright & additional footer links -->
+      {{ partial "copyright.html" . }}
+    </div>
+    <!-- /footer -->
+
+    <!-- Back to Top -->
+    <div id="back-top"><a href="#top"></a></div>
+    <!-- /Back to Top -->
+
+  <!-- Disqus Comment Count -->
+  {{ partial "disqus-comment-count" .}}
+  <!-- /Disqus Comment Count -->
+  </body>
+</html>

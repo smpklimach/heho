@@ -1,0 +1,29 @@
+{{ with .Site.Params.team }}
+
+<h2 class="hp-section-title">{{ .title }}</h2>
+<h3 class="hp-section-description">{{ .description }}</h3>
+
+<!-- Decorative arrow -->
+<div class="down-arrow fadeIn">&nbsp;</div>
+<!-- /Decorative arrow -->
+
+<div class="dividewhite6"></div>
+<div class="container">
+  <div class="row">
+    {{ range .members }}
+    <div class="col-md-6 infoblock">
+      <div class="text-center">
+        <img src="img/team/{{ .img }}" class="img-responsive img-circle" alt="">
+        <h4>{{ .name }}</h4>
+        <p class="text-muted">{{ .position }}</p>
+        <ul class="list-inline social-buttons">
+          {{ range .social }}
+            <li><a href="{{ index . 1 }}"><i class="fa {{ index . 0 }}"></i></a>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

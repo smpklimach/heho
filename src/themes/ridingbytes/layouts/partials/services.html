@@ -1,0 +1,42 @@
+{{ with .Site.Params.services }}
+
+<h2 class="hp-section-title">{{ .title }}</h2>
+<h3 class="hp-section-description">{{ .description }}</h3>
+
+<!-- Decorative arrow -->
+<div class="down-arrow fadeIn">&nbsp;</div>
+<!-- /Decorative arrow -->
+
+<div class="dividewhite6"></div>
+
+<div class="container">
+  <div class="row">
+
+    {{ range .list }}
+    <!-- service -->
+    <div class="col-md-3 infoblock">
+      <a href="{{ .href }}">
+        <div class="rd-medal-medium e-centered">
+          <span class="{{ .cls }}"></span>
+        </div>
+      </a>
+        <div class="dividewhite3"></div>
+        <h5 class="font-accident-one-medium uppercase"><a href="{{ .href }}">{{ .title }}</a></h5>
+        <p>{{ .description }}</p>
+        <a href="{{ .href }}">
+            {{ if isset . "details" }}
+            <ul>
+                {{ range .details }}
+                <li>{{ index . 0 }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </a>
+        <a class="btn btn-light btn-xs" href="{{ .href }}">Tell me more</a>
+    </div>
+    <!-- /service -->
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}

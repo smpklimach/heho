@@ -1,0 +1,13 @@
+{{ with .Site.Params.about }}
+<div id="site-title">
+  <h1 class="font-accident-one-bold">
+    <a href="/">
+      {{ if isset . "logo" }}
+        <img src="{{ .Site.BaseURL }}img/{{ .logo }}" alt="{{ .title }}" />
+      {{ else }}
+        {{ .title }}
+      {{ end }}
+    </a>
+  </h1>
+</div>
+{{ end }}

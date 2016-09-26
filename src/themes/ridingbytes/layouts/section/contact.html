@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9]>  <html class="ie9" lang="en">    <![endif]-->
+<!--[if IE 8]>  <html class="ie8" lang="en">    <![endif]-->
+  <head>
+    <!-- head -->
+    {{ partial "head.html" . }}
+    <!-- /head -->
+  </head>
+
+  <body class="template-contact-section">
+
+    <!-- sub-top -->
+    <div id="sub-top-light">
+      <div class="container">
+        <div class="top-contacts">
+          {{ partial "top.html" . }}
+        </div>
+      </div>
+     </div>
+    <!-- /sub-top -->
+
+    <!-- main-top -->
+    <header id="header-wrapper-mp" class="sticky-menu-light section-contact">
+
+      <div class="sticky-header header-light" role="navigation">
+        <div class="container mp-nav">
+
+          <!-- Site Logo -->
+          {{ partial "logo.html" . }}
+          <!-- /Site Logo -->
+
+          <!-- Navigation -->
+          {{ partial "navigation.html" . }}
+          <!-- /Navigation -->
+
+        </div>
+      </div>
+
+      <!-- Header -->
+      {{ partial "header-contact.html" . }}
+      <!-- /Header -->
+
+    </header>
+    <!-- /main-top -->
+
+    <!-- main content -->
+    <div id="content">
+
+      <div class="e-block-skin e-bg-light">
+
+        <!-- Decorative arrow -->
+        <div class="down-arrow">&nbsp;</div>
+        <!-- /Decorative arrow -->
+
+        <div class="container">
+          <div class="row">
+            {{ range .Data.Pages }}
+            <div class="col-md-4"></div>
+            <div class="col-md-4 infoblock text-center contact-address">
+              <div class="dividewhite2"></div>
+              <!--<div class="rd-medal e-centered"><span class="icon-speech-bubble"></span></div>-->
+              <h2 class="font-accident-one-light">{{ .Title }}</h2>
+              <p>{{ .Description }}</p>
+              <span>
+                {{ .Content }}
+              </span>
+            </div>
+            <div class="col-md-4"></div>
+            {{ end }}
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div id="contact" class="e-block e-block-centered e-block-skin hp-team e-bg-light-texture" data-stellar-background-ratio="0.5">
+        {{ partial "contact-form.html" . }}
+      </div>
+      <!-- /Contact Form -->
+
+    </div>
+
+    <!-- Google Map -->
+    <a class="gm-toggle-link">
+      <div class="gm-toggle">
+          <i class="fa fa-map-marker"></i>
+      </div>
+    </a>
+    <div id="gm-panel">
+        <div id="google-map" class="bigmap"></div>
+    </div>
+    <!-- /Google Map -->
+
+    <!-- footer -->
+    <div id="footer">
+      <!-- footer widget -->
+      {{ partial "footer.html" . }}
+
+      <!-- copyright & additional footer links -->
+      {{ partial "copyright.html" . }}
+    </div>
+    <!-- /footer -->
+
+    <!-- Back to Top -->
+    <div id="back-top"><a href="#top"></a></div>
+    <!-- /Back to Top -->
+
+  </body>
+</html>

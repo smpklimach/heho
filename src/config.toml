@@ -1,0 +1,519 @@
+# Site settings
+
+baseurl = "http://ridingbytes.com/"
+theme = "ridingbytes"
+title = "RIDING BYTES"
+languageCode = "en-us"
+copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
+
+
+[permalinks]
+    blog = "/:year/:month/:day/:slug/"
+
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
+
+[params]
+
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "Ramon Bartl"
+    description = "Riding Bytes UG (haftungsbeschränkt)"
+    keywords = "Python,Plone,Zope,JavaScript,CoffeeScript,Web,Development,Consulting"
+    dateformat = "Mon, Jan 2, 2006"
+    disqusShortname = "ridingbytes"
+
+
+    # navigation
+    [params.navigation]
+        title = "Navigation"
+        description = ""
+
+        [[params.navigation.list]]
+            title = "Home"
+            href = "/"
+            submenu = [
+                ["/#services", "Services"],
+                ["/#pricing", "Service Packages"],
+                #["/#team", "Team"],
+                #["/#partners", "Partners"],
+                ["/#customers", "Customers"],
+            ]
+        [[params.navigation.list]]
+            title = "Services"
+            href = "/services"
+            submenu = [
+                ["/services/#development", "Development"],
+                ["/services/#uiux", "UI/UX"],
+                ["/services/#consulting", "Consulting"],
+                ["/services/#administration", "Administration"]
+            ]
+        [[params.navigation.list]]
+            title = "Portfolio"
+            href = "/portfolio"
+        [[params.navigation.list]]
+            title = "Blog"
+            href = "/blog"
+        [[params.navigation.list]]
+            title = "About"
+            href = "/about"
+        [[params.navigation.list]]
+            title = "Contact"
+            href = "/contact"
+
+
+    # main site sections
+    [params.sections]
+
+        # home section /
+        [params.sections.home]
+            title = "Home"
+            href = "/"
+
+        # blog section /blog
+        [params.sections.blog]
+            title = "Blog"
+            subtitle = ""
+            href = "/blog"
+
+        # services section /services
+        [params.sections.services]
+            title = "Services"
+            subtitle = ""
+            href = "/services"
+
+        # about section /about
+        [params.sections.about]
+            title = "About"
+            subtitle = "About Us"
+            href = "/about"
+
+        # portfolio section /portfolio
+        [params.sections.portfolio]
+            title = "Portfolio"
+            subtitle = "Our Work"
+            href = "/portfolio"
+
+        # contact section /contact
+        [params.sections.contact]
+            title = "Contact"
+            subtitle = "Contact us today for any more details"
+            href = "/contact"
+
+        # 404 section /404
+        [params.sections.fourohfour]
+            title = "404"
+            subtitle = "Sorry, the Page your requested could not be found"
+            description = "Page Not Found"
+
+
+    # slider
+    [params.slider]
+
+        # slide 1
+        [[params.slider.slides]]
+            img = "slide1.jpg"
+            alt = "Riding Bytes Image"
+            [[params.slider.slides.layers]]
+                img = "rb_logo_weiss.png"
+                alt = "Riding Bytes"
+                start = "750"
+                y = "210"
+            [[params.slider.slides.layers]]
+                description = "INTERNATIONAL CODING COMPANY"
+                start = "800"
+                y = "400"
+                cls = "font-accident-one-bold fontcolor-invert"
+            [[params.slider.slides.layers]]
+                link = "Tell me more"
+                href = "#services"
+                start = "950"
+                y = "480"
+                cls = "page-scroll btn btn-lg btn-wh-str"
+
+        # slide 2
+        [[params.slider.slides]]
+            img = "slide2.jpg"
+            alt = ""
+            [[params.slider.slides.layers]]
+                title = "CODE SOLUTIONS"
+                start = "800"
+                y = "210"
+                cls = "font-accident-one-bold fontcolor-invert"
+            [[params.slider.slides.layers]]
+                description = "DESKTOP • MOBILE • PHONE"
+                start = "850"
+                y = "285"
+                cls = "font-accident-one-light fontcolor-invert"
+            [[params.slider.slides.layers]]
+                link = "Tell me more"
+                href = "#services"
+                start = "950"
+                y = "365"
+                cls = "page-scroll btn btn-lg btn-wh-str"
+
+        # slide 3
+        [[params.slider.slides]]
+            img = "slide3.jpg"
+            alt = ""
+            [[params.slider.slides.layers]]
+                title = "CONSULTING SERVICES"
+                start = "800"
+                y = "210"
+                cls = "font-accident-one-bold fontcolor-invert"
+            [[params.slider.slides.layers]]
+                description = "ANALYZE • THINK • SOLVE"
+                start = "850"
+                y = "285"
+                cls = "font-accident-one-light fontcolor-invert"
+            [[params.slider.slides.layers]]
+                link = "Tell me more"
+                href = "#services"
+                start = "950"
+                y = "365"
+                cls = "page-scroll btn btn-lg btn-wh-str"
+
+        # slide 4
+        [[params.slider.slides]]
+            img = "slide4.jpg"
+            alt = ""
+            [[params.slider.slides.layers]]
+                title = "OPEN SOURCE"
+                start = "800"
+                y = "210"
+                cls = "font-accident-one-bold fontcolor-invert"
+            [[params.slider.slides.layers]]
+                description = "FREEDOM • POWER • BEAUTY"
+                start = "850"
+                y = "285"
+                cls = "font-accident-one-light fontcolor-invert"
+            [[params.slider.slides.layers]]
+                link = "Tell me more"
+                href = "#services"
+                start = "950"
+                y = "365"
+                cls = "page-scroll btn btn-lg btn-wh-str"
+
+        # slide 5
+        [[params.slider.slides]]
+            img = "slide5.jpg"
+            alt = ""
+            [[params.slider.slides.layers]]
+                title = "PASSION"
+                start = "800"
+                y = "210"
+                cls = "font-accident-one-bold fontcolor-invert"
+            [[params.slider.slides.layers]]
+                description = "SOLUTIONS MADE WITH LOVE"
+                start = "850"
+                y = "285"
+                cls = "font-accident-one-light fontcolor-invert"
+            [[params.slider.slides.layers]]
+                link = "Tell me more"
+                href = "#services"
+                start = "950"
+                y = "365"
+                cls = "page-scroll btn btn-lg btn-wh-str"
+
+    # pricing
+    [params.pricing]
+        title = "Service Package Offers"
+        description = "Time-Boxed Service Packages"
+
+        [[params.pricing.list]]
+            title = "16h"
+            subtitle = "Introductory"
+            discount = "10% Discount"
+            description = "* One Time Bookable *"
+            subdescription = "Ideal for new Customers"
+            cls = "pricing plain"
+            details = [
+                ["16 Hours Fixed Time Package"],
+                ["Development"],
+                ["Consulting"],
+            ]
+
+        [[params.pricing.list]]
+            title = "20h"
+            subtitle = "Small"
+            discount = "5% Discount"
+            description = "Developer Package"
+            subdescription = "Ideal for Small Projects"
+            cls = "pricing plain"
+            details = [
+                ["20 Hours Fixed Time Package"],
+                ["Develpment"],
+                ["UI / UX DESIGN"],
+            ]
+
+        [[params.pricing.list]]
+            title = "50h"
+            subtitle = "Business"
+            discount = "5% Discount"
+            description = "Developer/Admin Package"
+            subdescription = "Ideal for Intermediate Projects"
+            cls = "pricing proposal"
+            details = [
+                ["50h Fixed Time Package"],
+                ["Development"],
+                ["UI / UX DESIGN"],
+                ["Administration"],
+            ]
+
+        [[params.pricing.list]]
+            title = "100h"
+            subtitle = "Professional"
+            discount = "10% Discount"
+            description = "Complete Package"
+            subdescription = "Ideal for Large/Ongoing Projects"
+            cls = "pricing plain"
+            details = [
+                ["100h Fixed Time Package"],
+                ["Development"],
+                ["Consulting"],
+                ["UI / UX DESIGN"],
+                ["Administration"],
+            ]
+
+    # services
+    [params.services]
+        title = "Services"
+        description = "Comprehensive Professional Web-Services"
+        [[params.services.list]]
+            title = "Development"
+            description = ""
+            cls = "icon-box"
+            href = "/services/#development"
+            details = [
+                ["Programming"],
+                ["Databases"],
+                ["APIs"]
+            ]
+        [[params.services.list]]
+            title = "UI / UX Design"
+            description = ""
+            cls = "icon-layers"
+            href = "/services/#uiux"
+            details = [
+                ["Web based UIs"],
+                ["Responsive"],
+                ["Mobile/Desktop"]
+            ]
+        [[params.services.list]]
+            title = "Consulting"
+            description = ""
+            cls = "icon-eye"
+            href = "/services/#consulting"
+            details = [
+                ["Analysis"],
+                ["Advice"],
+                ["Support"]
+            ]
+        [[params.services.list]]
+            title = "Administration"
+            description = ""
+            cls = "icon-server"
+            href = "/services/#administration"
+            details = [
+                ["Installation"],
+                ["Maintenance"],
+                ["Monitoring"]
+            ]
+
+
+    # team
+    [params.team]
+        title = "Our amazing team"
+        description = "Potential is not a matter of size"
+        [[params.team.members]]
+            img = "ramon.jpg"
+            name = "Ramon Bartl"
+            position = "Owner & Coder"
+            social = [
+                ["fa-twitter", "https://twitter.com/ramonbartl"],
+                ["fa-linkedin", "https://www.linkedin.com/in/ramonski"],
+                ["fa-github", "https://github.com/ramonski"],
+                ["fa-facebook", "https://www.facebook.com/ramonbartl"]
+            ]
+        [[params.team.members]]
+            img = "lucky.jpg"
+            name = "Lucky Luke"
+            position = "Leadership Coach and Mentor"
+            social = [
+                ["fa-twitter", "https://twitter.com/ridingbytes"],
+                ["fa-linkedin", "https://www.linkedin.com/company/riding-bytes"],
+                ["fa-github", "https://github.com/ridingbytes"],
+                ["fa-facebook", "https://www.facebook.com/ridingbytes"]
+            ]
+
+
+    # partners
+    [params.partners]
+        title = "Partners"
+        description = "More than just one Company – A worldwide Network of strong Partners"
+
+        [[params.partners.list]]
+            name = "Bika Lab Systems"
+            logo = "bika.jpg"
+            href = "http://www.bikalabs.com"
+            description = "Bika Labs provides up-market Open Source Laboratory Information Management Systems."
+
+        [[params.partners.list]]
+            name = "KGM GmbH"
+            logo = "kgm.png"
+            href = "http://www.k-g-m.com"
+            description = "KGM is an independend Marketing Agency, which offers brilliant Concepts and Services around Brand Creation, and Recognition."
+
+        [[params.partners.list]]
+            name = "nexiles GmbH"
+            logo = "nexiles.png"
+            href = "http://www.nexiles.com"
+            description = "Nexiles offers Services around Product Development and Information Management."
+
+
+    # customers
+    [params.customers]
+        title = "Customers"
+        description = "Sustainable IT Solutions for all kinds of Businesses"
+
+        [[params.customers.list]]
+            name = "Alpenleder"
+            logo = "alpenleder.png"
+            href = "http://www.alpenleder.com"
+            description = "We provide a holistic business solution for Alpenleder with a complete integration of their Website, Sales and E-Commerce Requirements in Odoo ERP."
+
+        [[params.customers.list]]
+            name = "2degrees Mobile Limited"
+            logo = "2degrees.png"
+            href = "http://www.2degreesmobile.co.nz"
+            description = "We support 2degrees Mobile in New Zealand to interface their Data Management Server with their existing IT Infrastructure."
+
+        [[params.customers.list]]
+            name = "Gletscher Cola"
+            logo = "gletschercola.png"
+            href = "http://www.gletschercola.de"
+            description = "We support Gletscher Cola with Consulting and Development Services."
+
+
+    # systems
+    [params.systems]
+        [[params.systems.links]]
+            title = "Plone"
+            url = "https://plone.org"
+            img = "plone.png"
+        [[params.systems.links]]
+            title = "ExtJS"
+            url = "https://sencha.com"
+            img = "extjs.png"
+        [[params.systems.links]]
+            title = "Odoo"
+            url = "https://odoo.com"
+            img = "odoo.png"
+        [[params.systems.links]]
+            title = "GitHub"
+            url = "https://github.com"
+            img = "github.png"
+        [[params.systems.links]]
+            title = "Python"
+            url = "https://python.com"
+            img = "python.png"
+        [[params.systems.links]]
+            title = "CoffeeScript"
+            url = "http://coffescript.org"
+            img = "coffeescript.png"
+
+
+    # about the company
+    [params.about]
+        title = "Riding Bytes"
+        [[params.about.infos]]
+            text = "RIDING BYTES is a web development company, which is specialized in UI/UX design, server based solutions and consulting services."
+        [[params.about.infos]]
+            text = "With over 10 years of experience in web development and consulting, we provide the right solutions for small, medium and large enterprises."
+
+
+    # contact information
+    [params.contact]
+        title = "Contact"
+        name = "Riding Bytes"
+        phone = "+49 (0) 8378 9321463"
+        email = "hello@ridingbytes.com"
+        address = "RIDING BYTES UG (haftungsbeschränkt), Einöde 49A, 87474 Buchenberg, Germany"
+        web = "http://ridingbytes.com"
+
+        [params.contact.form]
+            title = "Contact us"
+            subtitle  = "Ready to start your next project with us? That's great! Send us an email and we will get back to you as soon as possible!"
+            buttonText = "Send message"
+            to = "info@ridingbytes.com"
+
+        # 'warning' defines error messages for invalid inputs
+        [params.contact.form.name]
+            text = "Your Name *"
+            warning = "Please enter your name."
+        [params.contact.form.email]
+            text = "Your Email *"
+            warning = "Please enter your email address."
+        [params.contact.form.phone]
+            text = "Your Phone *"
+            warning = "Please enter your phone number."
+        [params.contact.form.message]
+            text = "Your Message *"
+            warning = "Please enter a message."
+
+
+    # social media links
+    [params.follow]
+        title = "Follow us"
+        [[params.follow.list]]
+            title = "Facebook"
+            href = "https://www.facebook.com/ridingbytes"
+            cls = "fa fa-facebook"
+        [[params.follow.list]]
+            title = "GitHub"
+            href = "https://github.com/ridingbytes"
+            cls = "fa fa-github"
+        [[params.follow.list]]
+            title = "LinkedIn"
+            href = "https://www.linkedin.com/company/riding-bytes"
+            cls = "fa fa-linkedin"
+        [[params.follow.list]]
+            title = "Twitter"
+            href = "https://twitter.com/ridingbytes"
+            cls = "fa fa-twitter"
+
+
+    # flickr feed
+    [params.flickr]
+        title = "Impressions"
+
+    # twitter feed
+    [params.twitter]
+        title = "Latest News"
+        login = "ridingbytes"
+        widgetId = "646968545675476992"
+        number = 5
+
+    # facebook feed
+    [params.facebook]
+        title = ""
+
+    # google analytics
+    [params.googleanalytics]
+        uac = "UA-71580219-1"
+
+    # copyright
+    [params.copyright]
+        year = "2015"
+        text = "All rights reserved"
+
+        # additional copyright links
+        #[[params.copyright.links]]
+            #title = "Terms & Conditions"
+            #url = ""
+        [[params.copyright.links]]
+            title = "Legal Notice"
+            url = "/legal"

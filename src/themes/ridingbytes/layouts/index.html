@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9]>  <html class="ie9" lang="en">    <![endif]-->
+<!--[if IE 8]>  <html class="ie8" lang="en">    <![endif]-->
+  <head>
+    <!-- head -->
+    {{ partial "head.html" . }}
+    <!-- /head -->
+  </head>
+
+  <body>
+
+    <!-- sub-top -->
+    <div id="sub-top-light">
+      <div class="container">
+        <div class="top-contacts">
+          {{ partial "top.html" . }}
+        </div>
+      </div>
+     </div>
+    <!-- /sub-top -->
+
+    <!-- main-top -->
+    <header id="header-wrapper-mp" class="sticky-menu-light">
+
+      <div class="sticky-header header-light" role="navigation">
+        <div class="container mp-nav">
+
+          <!-- Site Logo -->
+          {{ partial "logo.html" . }}
+          <!-- /Site Logo -->
+
+          <!-- Navigation -->
+          {{ partial "navigation.html" . }}
+          <!-- /Navigation -->
+
+        </div>
+      </div>
+
+      <!-- Header -->
+      {{ partial "header-home.html" . }}
+      <!-- /Header -->
+
+    </header>
+    <!-- /main-top -->
+
+    <!-- main content -->
+    <div id="content">
+
+      <!-- services -->
+      <div id="services" class="e-block e-block-centered e-block-skin e-bg-light hp-services" data-stellar-background-ratio="0.5">
+        {{ partial "services.html" . }}
+      </div>
+
+      <!-- pricing -->
+      <!--<div id="pricing" class="e-block e-block-centered e-block-skin hp-pricing" data-stellar-background-ratio="0.5">-->
+      <!--  {{ partial "pricing.html" . }}-->
+      <!--</div>-->
+
+      <!-- team -->
+      <!--<div id="team" class="e-block e-block-centered e-block-skin e-bg-light hp-team" data-stellar-background-ratio="0.5">-->
+      <!--  {{ partial "team.html" . }}-->
+      <!--</div>-->
+
+      <!-- partners -->
+      <!--<div id="partners" class="e-block e-block-centered e-block-skin hp-partners" data-stellar-background-ratio="0.5">-->
+      <!--  {{ partial "partners.html" . }}-->
+      <!--</div>-->
+
+      <!-- customers -->
+      <!--<div id="customers" class="e-block e-block-centered e-block-skin e-bg-light-texture hp-customers" data-stellar-background-ratio="0.5">-->
+      <!--  {{ partial "customers.html" . }}-->
+      <!--</div>-->
+
+
+    </div>
+
+    <!-- Google Map -->
+    <a class="gm-toggle-link">
+      <div class="gm-toggle">
+          <i class="fa fa-map-marker"></i>
+      </div>
+    </a>
+    <div id="gm-panel">
+        <div id="google-map" class="bigmap"></div>
+    </div>
+    <!-- /Google Map -->
+
+    <!-- footer -->
+    <div id="footer">
+      <!-- footer widget -->
+      {{ partial "footer.html" . }}
+
+      <!-- copyright & additional footer links -->
+      {{ partial "copyright.html" . }}
+    </div>
+    <!-- /footer -->
+
+    <!-- Back to Top -->
+    <div id="back-top"><a href="#top"></a></div>
+    <!-- /Back to Top -->
+
+  </body>
+</html>

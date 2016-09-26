@@ -1,0 +1,9 @@
+build/dev
+.sass-cache
+*.map
+node_modules
+src/themes/ridingbytes/static/img/sections
+vendor
+src/themes/ridingbytes/static/css
+src/themes/ridingbytes/static/img/photos/
+docs/_build

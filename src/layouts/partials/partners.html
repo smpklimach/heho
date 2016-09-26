@@ -1,0 +1,29 @@
+{{ with .Site.Params.partners }}
+
+<h2 class="hp-section-title">{{ .title }}</h2>
+<h3 class="hp-section-description">{{ .description }}</h3>
+
+<!-- Decorative arrow -->
+<div class="down-arrow fadeIn">&nbsp;</div>
+<!-- /Decorative arrow -->
+
+<div class="dividewhite6"></div>
+
+<div class="container">
+  <div class="row">
+
+    {{ range .list }}
+    <!-- partners -->
+    <div class="col-md-4 infoblock block-centered partner">
+      <a href="{{ .href }}"><img src="img/logos/{{ .logo }}" alt=""></a>
+      <div class="dividewhite2"></div>
+      <h4 class="font-accident-one-light uppercase"><a href="{{ .href }}">{{ .name }}</a></h4>
+      <p class="text-muted">{{ .description }}</p>
+    </div>
+    <!-- /partners -->
+    {{ end }}
+
+
+  </div>
+</div>
+{{ end }}

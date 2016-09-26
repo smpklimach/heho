@@ -1,0 +1,3 @@
+[submodule "build/public"]
+	path = build/public
+	url = git@github.com:ridingbytes/ridingbytes.github.io.git

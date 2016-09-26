@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row partners">
+    {{ range .Site.Params.systems.links }}
+    <div class="col-xs-1"><img src="{{ .Site.BaseURL }}img/systems/{{ .img }}" class="img-responsive" alt="x"></div>
+    {{ end }}
+  </div>
+</div>
