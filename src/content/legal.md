@@ -3,32 +3,27 @@ date = "2015-09-22T15:09:25+02:00"
 draft = false
 title = "Legal Notice"
 description = ""
+
 +++
 
-# Legal Information
+# Impressum
 
-**RIDING BYTES UG (haftungsbeschränkt)**
+**Kloster St. Marien zu Helfta**
 
-Einöde 49A
+Lindenstraße 36
 
-87474 Buchenberg
+06295 Eisleben
 
-Registration Court: Amtsgericht Ulm
-
-Commercial Register Number: HRB 732278
-
-USt-IdNr. (VAT No.): DE301668607
-
-Managing Director: Ramon Bartl
-
-Responsible for the content: Ramon Bartl
+Priorin: Sr. M. Christiane Hansen OCist.
 
 
-## Contact
 
-Mail: [hello@ridingbytes.com](mailto:hello@ridingbytes.com)
 
-Internet: [http://ridingbytes.com](http://ridingbytes.com)
+## Kontakt
+
+Mail: [schwestern@kloster-helfta.de](mailto:schwestern@kloster-helfta.de)
+
+Internet: [http://kloster-helfta.de](http://kloster-helfta.de)
 
 {{< divider >}}
 
@@ -36,23 +31,23 @@ Internet: [http://ridingbytes.com](http://ridingbytes.com)
 
 ### Inhalt
 
-Die RIDING BYTES UG stellt die Inhalte dieser Internetseiten mit großer Sorgfalt
+Das Kloster Helfta stellt die Inhalte dieser Internetseiten mit großer Sorgfalt
 zusammen. Jedoch übernehmen wir keine Gewähr für die Aktualität, Richtigkeit und
 Vollständigkeit der Informationen auf diesen Seiten oder den jederzeitigen
-störungsfreien Zugang. RIDING BYTES behält sich vor, Teile der Seiten ohne
+störungsfreien Zugang. Kloster Helfta behält sich vor, Teile der Seiten ohne
 gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die
 Veröffentlichung zeitweise einzustellen.
 
 ### Verweise/Links und Download
 
 Bei direkten oder indirekten Verweisen auf die Internetseiten Dritter ("Links"),
-übernimmt RIDING BYTES keine Verantwortung für die Inhalte der verlinkten
+übernimmt das Kloster Helfta keine Verantwortung für die Inhalte der verlinkten
 Seiten. Mit dem Betätigen des Verweises verlassen Sie das Informationsangebot
-von RIDING BYTES. Für die Angebote Dritter können daher abweichende Regelungen
+des Klosters Helfta. Für die Angebote Dritter können daher abweichende Regelungen
 gelten, insbesondere hinsichtlich des Datenschutzes.
 
-Weiterhin schließt RIDING BYTES ihre Haftung bei Serviceleistungen, insbesondere
-beim Download von durch RIDING BYTES zur Verfügung gestellten Daten, aus.
+Weiterhin schließt das Kloster Helfta die Haftung bei Serviceleistungen, insbesondere
+beim Download von zur Verfügung gestellten Daten, aus.
 
 ### Autoren-, Urheber- und Kennzeichnungsrecht
 
@@ -68,7 +63,7 @@ Wenn innerhalb des Internetpräsenz die Möglichkeit zur Angabe persönlicher
 und/oder geschäftlicher Daten (e-Mail-Adresse, Namen, Anschrift etc.)
 wahrgenommen wird, dann erfolgt die Freigabe dieser Daten seitens des Adressaten
 auf ausdrücklich freiwilliger Basis. Wird das Einverständnis zur Nennung bzw.
-Verwaltung solcher Daten zurückgezogen, dann ist RIDING BYTES verpflichtet,
+Verwaltung solcher Daten zurückgezogen, dann ist das Kloster Helfta verpflichtet,
 umgehend die vollständige Löschung dieser Daten vorzunehmen.
 
 ### Einsatz von PIWIK Statistik Tools
@@ -93,14 +88,13 @@ und zu dem benannten Zweck einverstanden.
 ### Fragen und Kommentare
 
 Für Fragen, Anregungen oder Kommentare zum Thema Datenschutz wenden Sie sich
-bitte per E-Mail an datenschutz@ridingbytes.com.
+bitte per E-Mail an datenschutz@kloster-helfta.de.
 
 ### Copyright
 
 Alle Texte, Bilder und andere auf der Internetpräsenz veröffentlichte Werke
-unterliegen - sofern nicht anders gekennzeichnet - dem Copyright der RIDING
-BYTES UG. Jede Vervielfältigung, Verbreitung, Speicherung, Übermittlung, Sendung
-und Wieder- bzw. Weitergabe der Inhalte ist ohne schriftliche Genehmigung von
-RIDING BYTES ausdrücklich untersagt.
+unterliegen - sofern nicht anders gekennzeichnet - dem Copyright des Klosters Helfta. 
+Jede Vervielfältigung, Verbreitung, Speicherung, Übermittlung, Sendung
+und Wieder- bzw. Weitergabe der Inhalte ist ohne schriftliche Genehmigung des Klosters Helfta ausdrücklich untersagt.
 
 {{< divider >}}

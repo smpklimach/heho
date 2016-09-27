@@ -1,0 +1,10 @@
+{{ with .Site.Params.about }}
+<div class="infoblock">
+  <h2 class="font-accident-one-bold">{{ .title }}</h2>
+
+  {{ range .infos }}
+  <p class="{{ .cls }} ">{{ .text }}</p>
+  {{ end }}
+
+</div>
+{{ end }}

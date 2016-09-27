@@ -1,10 +1,10 @@
 # Site settings
 
-baseurl = "http://ridingbytes.com/"
+baseurl = "http://s645360620.online.de/"
 theme = "ridingbytes"
-title = "RIDING BYTES"
-languageCode = "en-us"
-copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
+title = "Kloster Helfta"
+languageCode = "de-de"
+copyright = "Copyright (c) 2016, Kloster Helfta"
 
 
 [permalinks]
@@ -20,11 +20,11 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
 
     # To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-    name = "Ramon Bartl"
-    description = "Riding Bytes UG (haftungsbeschränkt)"
-    keywords = "Python,Plone,Zope,JavaScript,CoffeeScript,Web,Development,Consulting"
-    dateformat = "Mon, Jan 2, 2006"
-    disqusShortname = "ridingbytes"
+    name = "Zisterzienserinnen Kloster St. Marien zu Helfta"
+    description = "Zisterzienserinnen Kloster St. Marien zu Helfta in der Lutherstadt Eisleben"
+    keywords = "Kloster,Zisterzienser,Helfta,Gertrud,Mechthild,Mechtild,Abtei,Zisterzienserinnen,Orden,monastisch,Luther,Eisleben,Heilige"
+    dateformat = "Mon,2 Jan, 2006"
+    disqusShortname = "klosterhelfta"
 
 
     # navigation
@@ -33,35 +33,39 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
         description = ""
 
         [[params.navigation.list]]
-            title = "Home"
+            title = "Zu Hause"
             href = "/"
             submenu = [
-                ["/#services", "Services"],
-                ["/#pricing", "Service Packages"],
-                #["/#team", "Team"],
-                #["/#partners", "Partners"],
-                ["/#customers", "Customers"],
+                ["/#kloster", "Kloster"],
+                ["/#gaestehaus", "Gästehaus"],
+                ["/#mechthildstift", "Caritas-Pflegezentrum St. Mechthild"],
+                ["/#kinderhaus", "Montessori Kinderhaus St. Marien"],
             ]
         [[params.navigation.list]]
-            title = "Services"
-            href = "/services"
+            title = "Zu Gast"
+            href = "/zugast"
             submenu = [
-                ["/services/#development", "Development"],
-                ["/services/#uiux", "UI/UX"],
-                ["/services/#consulting", "Consulting"],
-                ["/services/#administration", "Administration"]
+                ["/zugast/#fuehrungen", "Führungen"],
+                ["/zugast/#uebernachten", "Übernachtungen"],
+                ["/zugast/#essen", "Essen & Trinken"],
+                ["/zugast/#kurse", "Kurse & Seminare"],
+ 		["/zugast/#exerzitien", "Exerzitien"],
+		["/zugast/#gespraeche", "Gespräche"],
+                ["/zugast/#Klosterladen", "Klosterladen"],
+                ["/zugast/#feiern", "Feiern"],
+ 		["/zugast/#ausfluege", "Ausflugsziele"],
             ]
         [[params.navigation.list]]
-            title = "Portfolio"
-            href = "/portfolio"
+            title = "Programm"
+            href = "/programm"
         [[params.navigation.list]]
-            title = "Blog"
-            href = "/blog"
+            title = "Aktuelles"
+            href = "/aktuelles"
         [[params.navigation.list]]
-            title = "About"
+            title = "Hintergründe"
             href = "/about"
         [[params.navigation.list]]
-            title = "Contact"
+            title = "Kontakt"
             href = "/contact"
 
 
@@ -70,37 +74,37 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
 
         # home section /
         [params.sections.home]
-            title = "Home"
+            title = "Zu Hause"
             href = "/"
 
-        # blog section /blog
+        # blog section /aktuelles
         [params.sections.blog]
-            title = "Blog"
+            title = "Aktuelles"
             subtitle = ""
-            href = "/blog"
+            href = "/aktuelles"
 
-        # services section /services
+        # services section /angebote
         [params.sections.services]
-            title = "Services"
+            title = "Angebote"
             subtitle = ""
-            href = "/services"
+            href = "/angebote"
 
         # about section /about
         [params.sections.about]
-            title = "About"
-            subtitle = "About Us"
+            title = "Hintergründe"
+            subtitle = "Das Kloster und seine Geschichte"
             href = "/about"
 
-        # portfolio section /portfolio
+        # portfolio section /programm
         [params.sections.portfolio]
-            title = "Portfolio"
-            subtitle = "Our Work"
-            href = "/portfolio"
+            title = "Programm"
+            subtitle = "Kurse, Seminare, Exerzitien, Vorträge"
+            href = "/programm"
 
-        # contact section /contact
+        # contact section /kontakt
         [params.sections.contact]
-            title = "Contact"
-            subtitle = "Contact us today for any more details"
+            title = "Kontakt"
+            subtitle = "Sagen Sie doch mal 'Hallo'"
             href = "/contact"
 
         # 404 section /404
@@ -115,20 +119,20 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
 
         # slide 1
         [[params.slider.slides]]
-            img = "slide1.jpg"
-            alt = "Riding Bytes Image"
+            img = "slide-2.jpg"
+            alt = "Kloster Helfta"
             [[params.slider.slides.layers]]
-                img = "rb_logo_weiss.png"
-                alt = "Riding Bytes"
+                img = "kloster_weiss.png"
+                alt = "Kloster Helfta"
                 start = "750"
                 y = "210"
             [[params.slider.slides.layers]]
-                description = "INTERNATIONAL CODING COMPANY"
+                description = "ZISTERZIENSERINNENKLOSTER ST. MARIEN"
                 start = "800"
                 y = "400"
-                cls = "font-accident-one-bold fontcolor-invert"
+                cls = "font-accident-one fontcolor-invert"
             [[params.slider.slides.layers]]
-                link = "Tell me more"
+                link = "Mehr erfahren"
                 href = "#services"
                 start = "950"
                 y = "480"
@@ -136,20 +140,20 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
 
         # slide 2
         [[params.slider.slides]]
-            img = "slide2.jpg"
-            alt = ""
+           img = "slide-1.jpg"
+            alt = "modern mit mystischen Wurzeln"
             [[params.slider.slides.layers]]
-                title = "CODE SOLUTIONS"
+                title = "MODERNE TRIFFT MYSTIK"
                 start = "800"
                 y = "210"
                 cls = "font-accident-one-bold fontcolor-invert"
             [[params.slider.slides.layers]]
-                description = "DESKTOP • MOBILE • PHONE"
+                description = "ARCHITEKTUR • GEBET • ARBEITSBEREICHE"
                 start = "850"
                 y = "285"
                 cls = "font-accident-one-light fontcolor-invert"
             [[params.slider.slides.layers]]
-                link = "Tell me more"
+                link = "Mehr erfahren"
                 href = "#services"
                 start = "950"
                 y = "365"
@@ -157,170 +161,170 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
 
         # slide 3
         [[params.slider.slides]]
-            img = "slide3.jpg"
+            img = "slide-4.jpg"
             alt = ""
             [[params.slider.slides.layers]]
-                title = "CONSULTING SERVICES"
+                title = "OASE DER STILLE"
                 start = "800"
                 y = "210"
                 cls = "font-accident-one-bold fontcolor-invert"
             [[params.slider.slides.layers]]
-                description = "ANALYZE • THINK • SOLVE"
+                description = "EINKEHR • SAMMLUNG • GOTESSBEGEGNUNG"
                 start = "850"
                 y = "285"
                 cls = "font-accident-one-light fontcolor-invert"
             [[params.slider.slides.layers]]
-                link = "Tell me more"
+                link = "Mehr erfahren"
                 href = "#services"
                 start = "950"
                 y = "365"
                 cls = "page-scroll btn btn-lg btn-wh-str"
 
         # slide 4
-        [[params.slider.slides]]
-            img = "slide4.jpg"
-            alt = ""
-            [[params.slider.slides.layers]]
-                title = "OPEN SOURCE"
-                start = "800"
-                y = "210"
-                cls = "font-accident-one-bold fontcolor-invert"
-            [[params.slider.slides.layers]]
-                description = "FREEDOM • POWER • BEAUTY"
-                start = "850"
-                y = "285"
-                cls = "font-accident-one-light fontcolor-invert"
-            [[params.slider.slides.layers]]
-                link = "Tell me more"
-                href = "#services"
-                start = "950"
-                y = "365"
-                cls = "page-scroll btn btn-lg btn-wh-str"
+       # [[params.slider.slides]]
+        #    img = "slide-5.jpg"
+         #   alt = ""
+          #  [[params.slider.slides.layers]]
+           #     title = "ORT INTENSIVER GOTTESBEGEGNUNG"
+            #    start = "800"
+             #   y = "210"
+              #  cls = "font-accident-one-bold fontcolor-invert"
+          #  [[params.slider.slides.layers]]
+           #     description = "KLOSTERKIRCHE • GERTRUDKAPELLE • LABYRINTH"
+            #    start = "850"
+             #   y = "285"
+              #  cls = "font-accident-one-light fontcolor-invert"
+           # [[params.slider.slides.layers]]
+            #    link = "Mehr erfahren"
+             #   href = "#services"
+              #  start = "950"
+               # y = "365"
+                #cls = "page-scroll btn btn-lg btn-wh-str"
 
         # slide 5
-        [[params.slider.slides]]
-            img = "slide5.jpg"
-            alt = ""
-            [[params.slider.slides.layers]]
-                title = "PASSION"
-                start = "800"
-                y = "210"
-                cls = "font-accident-one-bold fontcolor-invert"
-            [[params.slider.slides.layers]]
-                description = "SOLUTIONS MADE WITH LOVE"
-                start = "850"
-                y = "285"
-                cls = "font-accident-one-light fontcolor-invert"
-            [[params.slider.slides.layers]]
-                link = "Tell me more"
-                href = "#services"
-                start = "950"
-                y = "365"
-                cls = "page-scroll btn btn-lg btn-wh-str"
+#        [[params.slider.slides]]
+ #           img = "slide-6.jpg"
+  #          alt = ""
+   #         [[params.slider.slides.layers]]
+    #            title = "MIT LEIDENSCHAFT"
+     #           start = "800"
+      #          y = "210"
+       #         cls = "font-accident-one-bold fontcolor-invert"
+        #    [[params.slider.slides.layers]]
+         #       description = "OFFEN • KREATIV • HERZLICH"
+          #      start = "850"
+           #     y = "285"
+            #    cls = "font-accident-one-light fontcolor-invert"
+            #[[params.slider.slides.layers]]
+             #   link = "Mehr erfahren"
+              #  href = "#services"
+               # start = "950"
+                #y = "365"
+                #cls = "page-scroll btn btn-lg btn-wh-str"
 
     # pricing
-    [params.pricing]
-        title = "Service Package Offers"
-        description = "Time-Boxed Service Packages"
+  #  [params.pricing]
+   #     title = "Service Package Offers"
+    #    description = "Time-Boxed Service Packages"
 
-        [[params.pricing.list]]
-            title = "16h"
-            subtitle = "Introductory"
-            discount = "10% Discount"
-            description = "* One Time Bookable *"
-            subdescription = "Ideal for new Customers"
-            cls = "pricing plain"
-            details = [
-                ["16 Hours Fixed Time Package"],
-                ["Development"],
-                ["Consulting"],
-            ]
+     #   [[params.pricing.list]]
+      #      title = "16h"
+       #     subtitle = "Introductory"
+        #    discount = "10% Discount"
+         #   description = "* One Time Bookable *"
+          #  subdescription = "Ideal for new Customers"
+           # cls = "pricing plain"
+            #details = [
+             #   ["16 Hours Fixed Time Package"],
+              #  ["Development"],
+               # ["Consulting"],
+           # ]
 
-        [[params.pricing.list]]
-            title = "20h"
-            subtitle = "Small"
-            discount = "5% Discount"
-            description = "Developer Package"
-            subdescription = "Ideal for Small Projects"
-            cls = "pricing plain"
-            details = [
-                ["20 Hours Fixed Time Package"],
-                ["Develpment"],
-                ["UI / UX DESIGN"],
-            ]
+      #  [[params.pricing.list]]
+       #     title = "20h"
+        #    subtitle = "Small"
+         #   discount = "5% Discount"
+          #  description = "Developer Package"
+           # subdescription = "Ideal for Small Projects"
+            #cls = "pricing plain"
+            #details = [
+             #   ["20 Hours Fixed Time Package"],
+              #  ["Develpment"],
+               # ["UI / UX DESIGN"],
+           # ]
 
-        [[params.pricing.list]]
-            title = "50h"
-            subtitle = "Business"
-            discount = "5% Discount"
-            description = "Developer/Admin Package"
-            subdescription = "Ideal for Intermediate Projects"
-            cls = "pricing proposal"
-            details = [
-                ["50h Fixed Time Package"],
-                ["Development"],
-                ["UI / UX DESIGN"],
-                ["Administration"],
-            ]
+    #    [[params.pricing.list]]
+     #       title = "50h"
+      #      subtitle = "Business"
+       #     discount = "5% Discount"
+        #    description = "Developer/Admin Package"
+         #   subdescription = "Ideal for Intermediate Projects"
+          #  cls = "pricing proposal"
+           # details = [
+            #    ["50h Fixed Time Package"],
+             #   ["Development"],
+              #  ["UI / UX DESIGN"],
+               # ["Administration"],
+            #]
 
-        [[params.pricing.list]]
-            title = "100h"
-            subtitle = "Professional"
-            discount = "10% Discount"
-            description = "Complete Package"
-            subdescription = "Ideal for Large/Ongoing Projects"
-            cls = "pricing plain"
-            details = [
-                ["100h Fixed Time Package"],
-                ["Development"],
-                ["Consulting"],
-                ["UI / UX DESIGN"],
-                ["Administration"],
-            ]
+     #   [[params.pricing.list]]
+      #      title = "100h"
+       #     subtitle = "Professional"
+        #    discount = "10% Discount"
+         #   description = "Complete Package"
+          #  subdescription = "Ideal for Large/Ongoing Projects"
+           # cls = "pricing plain"
+            #details = [
+             #   ["100h Fixed Time Package"],
+              #  ["Development"],
+               # ["Consulting"],
+                #["UI / UX DESIGN"],
+               # ["Administration"],
+            #]
 
     # services
     [params.services]
-        title = "Services"
-        description = "Comprehensive Professional Web-Services"
+        title = "Angebote"
+        description = "Da-Sein vor Gott für die Menschen"
         [[params.services.list]]
-            title = "Development"
-            description = ""
+            title = "Kloster"
+            description = "Zisterzienserinnen in Helfta"
             cls = "icon-box"
             href = "/services/#development"
             details = [
-                ["Programming"],
-                ["Databases"],
-                ["APIs"]
+                ["Gebet"],
+                ["Arbeit"],
+                ["Lectio Divina"]
             ]
         [[params.services.list]]
-            title = "UI / UX Design"
-            description = ""
+            title = "Gästehaus"
+            description = "Jeder soll empfangen werden wie Christus"
             cls = "icon-layers"
             href = "/services/#uiux"
             details = [
-                ["Web based UIs"],
-                ["Responsive"],
-                ["Mobile/Desktop"]
+                ["Gruppenreisen"],
+                ["Einzelgäste"],
+                ["Tagesausflügler"]
             ]
         [[params.services.list]]
-            title = "Consulting"
-            description = ""
+            title = "Pflegezentrum"
+            description = "Caritas Pflegezentrum St. Mechthild"
             cls = "icon-eye"
             href = "/services/#consulting"
             details = [
-                ["Analysis"],
-                ["Advice"],
-                ["Support"]
+                ["Pflege"],
+                ["Begleitung"],
+                ["Alter in Würde"]
             ]
         [[params.services.list]]
-            title = "Administration"
-            description = ""
+            title = "Kinderhaus"
+            description = "Montessori-Kinderhaus St. Marien"
             cls = "icon-server"
             href = "/services/#administration"
             details = [
-                ["Installation"],
-                ["Maintenance"],
-                ["Monitoring"]
+                ["Erziehung"],
+                ["Förderung"],
+                ["Liebe"]
             ]
 
 
@@ -344,7 +348,7 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             position = "Leadership Coach and Mentor"
             social = [
                 ["fa-twitter", "https://twitter.com/ridingbytes"],
-                ["fa-linkedin", "https://www.linkedin.com/company/riding-bytes"],
+               # ["fa-linkedin", "https://www.linkedin.com/company/riding-bytes"],
                 ["fa-github", "https://github.com/ridingbytes"],
                 ["fa-facebook", "https://www.facebook.com/ridingbytes"]
             ]
@@ -428,41 +432,41 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
 
     # about the company
     [params.about]
-        title = "Riding Bytes"
+        title = "Kloster Helfta"
         [[params.about.infos]]
-            text = "RIDING BYTES is a web development company, which is specialized in UI/UX design, server based solutions and consulting services."
+            text = "Das Zisterzienserinnenkloster St. Marien zu Helfta ist ein Ort des Gebetes, der Begegnung und des Friedens."
         [[params.about.infos]]
             text = "With over 10 years of experience in web development and consulting, we provide the right solutions for small, medium and large enterprises."
 
 
     # contact information
     [params.contact]
-        title = "Contact"
-        name = "Riding Bytes"
-        phone = "+49 (0) 8378 9321463"
-        email = "hello@ridingbytes.com"
-        address = "RIDING BYTES UG (haftungsbeschränkt), Einöde 49A, 87474 Buchenberg, Germany"
-        web = "http://ridingbytes.com"
+        title = "Kontakt"
+        name = "Kloster St. Marien zu Helfta"
+        phone = "+49 (0) 3475 711-500"
+        email = "schwestern@kloster-helfta.de"
+        address = "Kloster St. Marien zu Helfta, Lindenstraße 36, 06295 Lutherstadt Eisleben"
+        web = "http://kloster-helfta.de"
 
         [params.contact.form]
-            title = "Contact us"
-            subtitle  = "Ready to start your next project with us? That's great! Send us an email and we will get back to you as soon as possible!"
-            buttonText = "Send message"
-            to = "info@ridingbytes.com"
+            title = "Kontakt aufnehmen"
+            subtitle  = "Schreiben Sie den Schwestern, was Ihnen auf dem Herzen liegt!"
+            buttonText = "Nachricht senden"
+            to = "schwestern@kloster-helfta.de"
 
         # 'warning' defines error messages for invalid inputs
         [params.contact.form.name]
-            text = "Your Name *"
-            warning = "Please enter your name."
+            text = "Ihr Name *"
+            warning = "Bitte geben Sie Ihren Namen ein."
         [params.contact.form.email]
-            text = "Your Email *"
-            warning = "Please enter your email address."
+            text = "Ihre Email-Adresse *"
+            warning = "Bitte geben Sie Ihre Email-Adresse ein."
         [params.contact.form.phone]
-            text = "Your Phone *"
-            warning = "Please enter your phone number."
+            text = "Ihre Telefonnummer *"
+            warning = "Bitte geben Sie Ihre Telefonnummer ein."
         [params.contact.form.message]
-            text = "Your Message *"
-            warning = "Please enter a message."
+            text = "Ihre Nachricht *"
+            warning = "Bitte schreiben Sie Ihre Nachricht."
 
 
     # social media links
@@ -476,10 +480,10 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
             title = "GitHub"
             href = "https://github.com/ridingbytes"
             cls = "fa fa-github"
-        [[params.follow.list]]
-            title = "LinkedIn"
-            href = "https://www.linkedin.com/company/riding-bytes"
-            cls = "fa fa-linkedin"
+       # [[params.follow.list]]
+        #    title = "LinkedIn"
+         #   href = "https://www.linkedin.com/company/riding-bytes"
+          #  cls = "fa fa-linkedin"
         [[params.follow.list]]
             title = "Twitter"
             href = "https://twitter.com/ridingbytes"
@@ -507,13 +511,13 @@ copyright = "Copyright (c) 2015, RIDING BYTES; all rights reserved."
 
     # copyright
     [params.copyright]
-        year = "2015"
+        year = "2016"
         text = "All rights reserved"
 
         # additional copyright links
         #[[params.copyright.links]]
-            #title = "Terms & Conditions"
+            #title = "Impressum"
             #url = ""
         [[params.copyright.links]]
-            title = "Legal Notice"
+            title = "Impressum"
             url = "/legal"

@@ -1,47 +1,33 @@
 +++
-author = "RIDING BYTES"
+author = "Kloster Helfta"
 categories = []
 date = "2015-09-24T14:18:03+02:00"
-description = ""
+description = "Hintergründe zum Kloster und seiner Geschichte"
 draft = false
-title = "about"
+title = "Hintergründe"
 +++
 
-# RIDING BYTES
+# Aufblühen des Klosters
 
-RIDING BYTES was founded on July, 2nd 2015. Ramon Bartl, the owner
-of the company, holds a degree in applied computer sciences and has
-over 10 years of experience in web development.
-
-The company name is a homage to the lately experienced partnership with the
-owners horse "Lucky". It also symbolizes the relation between the company and
-its customers, which is based on trust, goodwill and a mutual understanding
-based on communication.
-
-The rearing horse in the logo stands for the power, beauty and the freedom of
-the software solutions the company provides.
+Im Jahr 1229 gründeten Graf Burchard von Mansfeld und seine Gemahlin, Elisabeth von Schwarzburg, nahe ihrer Burg in Mansfeld das Kloster St. Marien.
+Sieben Cistercienserinnen verließen das Kloster St. Jakob und Burchardi in Halberstadt und zogen in das neugegründete Cistercienserinnenkloster in Mansfeld ein.
+Nach mehrmaliger Verlegung fand am 3. Juni 1258 die feierliche Einweihung des Klosters in Helfta statt. In der Folgezeit erlebte das Ordenshaus unter der Leitung der Äbtissin
+Gertrud von Hakeborn seine Blütezeit. 
+Der zahlenmäßig starke Konvent betrieb eine Klosterschule, erhielt reiche Schenkungen und wurde zur Wirkungsstätte der berühmten Mystikerinnnen Mechthild von Magdeburg, Mechthild von Hakeborn
+und Gertrud der Großen.
 
 
-# Mission
+# Niedergang des Klosters
 
-The company was started for one single reason: To build better software for
-human beings. Therefore our mission is to build software solutions, using the
-most sophisticated and modern technologies available on the market. Always
-aligned with our strategy: To support free and open source software.
-
-
-# Vision
-
-Our vision is a world where the internet is the platform for computer systems.
-Where data from different sources are available through a single user
-interface, like a web browser. Where information is displayed when needed, just
-in the right moment. Where the software adapts to the user and not vice versa.
+Nach mehreren Plünderungen im 13. und 14. wurde das Kloster 1343 erneut verlegt - vor die Stadtmauer von Eisleben. Doch auch hier waren die Nonnen nicht sicher und im Jahre 1525 flüchteten die
+letzten verbliebenen Nonnen während einer erneuten Verwüstung des Klosters. Im Jahr 1542 wird das Kloster schließlich im Rahmen der Säkularisierung ein letztes Mal urkundlich erwähnt. In den
+folgenden Jahrhunderten wechselten die Besitzer, bevor das Gelände im Jahre 1945 in ein "Volkseigenes Gut" der DDR umgewandelt wird.
 
 
-# Strategy
+# Wiederaufbau
 
-Our strategy is to provide free and open source software whenever possible.
-Give and you will receive. This simple but true wisdom is the core belief of
-the company and its members. Only with the power of the whole mankind it is
-possible to create something great. Empowering the people worldwide to their
-full potential.
+Ende des 20. Jahrhunderts schlossen sich Vereine für den Wiederaufbau des Klosters Helfta zusammen und konnten gemeinsam genug Spenden sammeln, um das Gelände zu kaufen. Im Frühjahr 1998 
+begonnen die Bauarbeiten am Kloster unter der Bauherrenschaft des Bistums Magdeburg. Am 13. August 1999 zogen nach mehr als 450 Jahren wieder Cistercienserinnen in Helfta ein. 
+
+
+

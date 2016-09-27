@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9]>  <html class="ie9" lang="en">    <![endif]-->
+<!--[if IE 8]>  <html class="ie8" lang="en">    <![endif]-->
+  <head>
+    <!-- head -->
+    {{ partial "head.html" . }}
+    <!-- /head -->
+  </head>
+
+  <body class="template-portfolio-page-single">
+
+    <!-- sub-top -->
+    <div id="sub-top-light">
+      <div class="container">
+        <div class="top-contacts">
+          {{ partial "top.html" . }}
+        </div>
+      </div>
+     </div>
+    <!-- /sub-top -->
+
+    <!-- main-top -->
+    <header id="header-wrapper-mp" class="sticky-menu-light portfolio-page-single">
+
+      <div class="sticky-header header-light" role="navigation">
+        <div class="container mp-nav">
+
+          <!-- Site Logo -->
+          {{ partial "logo.html" . }}
+          <!-- /Site Logo -->
+
+          <!-- Navigation -->
+          {{ partial "navigation.html" . }}
+          <!-- /Navigation -->
+
+        </div>
+      </div>
+
+      <!-- Header -->
+      {{ partial "header-project.html" . }}
+      <!-- /Header -->
+
+    </header>
+    <!-- /main-top -->
+
+    <!-- main content -->
+    <div id="content">
+
+
+      <!-- Decorative arrow -->
+      <div class="down-arrow">&nbsp;</div>
+      <!-- /Decorative arrow -->
+
+      <div class="container">
+
+        <div class="e-block e-block-skin">
+
+          <!-- portfolio item -->
+          <div class="container">
+
+            <h1 class="font-accident-one-light uppercase">
+              {{ .Title }}
+            </h1>
+            <div class="dividewhite2"></div>
+
+            <div class="row">
+
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-8">
+                    <img src="/media/portfolio/{{ .Params.img }}" class="img-responsive" />
+                  </div>
+                  <div class="col-md-4">
+                    <div class="row">
+                      <div class="col-md-11 col-md-offset-1">
+
+                        <div class="portfolio-item-data">
+
+                          <h5 class="font-accident-one-medium uppercase">Project Data</h5>
+                          <div class="infoblock">
+                              <hr>
+                              <ul>
+                                <li>Project Category:
+                                  {{ range $tag := .Params.tags }}
+                                  <span class="icon-tag"></span>
+                                  <span>{{ . | upper }}</span>
+                                  {{ end }}
+                                </li>
+                                <li>Client: <span>{{ .Params.client  }}</span></li>
+                                <li>Start Date: <span>{{ .Params.start }}</span></li>
+                                <li>End Date: <span>{{ .Params.end }}</span></li>
+                              </ul>
+                          </div>
+
+                          <h5 class="font-accident-one-medium uppercase">Project Features</h5>
+                          <div class="infoblock">
+                              <hr>
+                              <ul class="list-o">
+                                {{ range .Params.features }}
+                                  <li>{{ . }}</li>
+                                {{ end }}
+                              </ul>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="dividewhite2"></div>
+
+            <div class="row">
+              <div class="col-md-12 portfolio-content">
+                {{ .Content }}
+              </div>
+            </div>
+
+          </div>
+          <!-- /portfolio item -->
+
+          <div class="container rb-divider">
+            <div class="row">
+              <div class="col-md-12 col-md-offset-5 e-block-centered">
+                &mdash; <img src="/img/rb_logo_32x32.png" /> &mdash;
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- /main content -->
+
+    <!-- Google Map -->
+    <a class="gm-toggle-link">
+      <div class="gm-toggle">
+        <i class="fa fa-map-marker"></i>
+      </div>
+    </a>
+    <div id="gm-panel">
+        <div id="google-map" class="bigmap"></div>
+    </div>
+    <!-- /Google Map -->
+
+    <!-- footer -->
+    <div id="footer">
+      <!-- footer widget -->
+      {{ partial "footer.html" . }}
+
+      <!-- copyright & additional footer links -->
+      {{ partial "copyright.html" . }}
+    </div>
+    <!-- /footer -->
+
+    <!-- Back to Top -->
+    <div id="back-top"><a href="#top"></a></div>
+    <!-- /Back to Top -->
+
+  </body>
+</html>
+

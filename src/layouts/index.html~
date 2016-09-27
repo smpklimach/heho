@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <!--[if IE 9]>  <html class="ie9" lang="en">    <![endif]-->
 <!--[if IE 8]>  <html class="ie8" lang="en">    <![endif]-->
   <head>
@@ -8,13 +8,7 @@
     <!-- /head -->
   </head>
 
-  <body class="template-fourohfour">
-
-    <!-- loader -->
-    <!--<div id="loader-wrapper">
-      {{ partial "loader.html" . }}
-    </div>-->
-    <!-- /loader -->
+  <body>
 
     <!-- sub-top -->
     <div id="sub-top-light">
@@ -27,7 +21,7 @@
     <!-- /sub-top -->
 
     <!-- main-top -->
-    <header id="header-wrapper-mp" class="sticky-menu-light section-404">
+    <header id="header-wrapper-mp" class="sticky-menu-light">
 
       <div class="sticky-header header-light" role="navigation">
         <div class="container mp-nav">
@@ -44,11 +38,42 @@
       </div>
 
       <!-- Header -->
-      {{ partial "header-fourohfour.html" . }}
+      {{ partial "header-home.html" . }}
       <!-- /Header -->
 
     </header>
     <!-- /main-top -->
+
+    <!-- main content -->
+    <div id="content">
+
+      <!-- services -->
+      <div id="services" class="e-block e-block-centered e-block-skin e-bg-light hp-services" data-stellar-background-ratio="0.5">
+        {{ partial "services.html" . }}
+      </div>
+
+      <!-- pricing -->
+      <!--<div id="pricing" class="e-block e-block-centered e-block-skin hp-pricing" data-stellar-background-ratio="0.5">-->
+      <!--  {{ partial "pricing.html" . }}-->
+      <!--</div>-->
+
+      <!-- team -->
+      <!--<div id="team" class="e-block e-block-centered e-block-skin e-bg-light hp-team" data-stellar-background-ratio="0.5">-->
+      <!--  {{ partial "team.html" . }}-->
+      <!--</div>-->
+
+      <!-- partners -->
+      <!--<div id="partners" class="e-block e-block-centered e-block-skin hp-partners" data-stellar-background-ratio="0.5">-->
+      <!--  {{ partial "partners.html" . }}-->
+      <!--</div>-->
+
+      <!-- customers -->
+      <!--<div id="customers" class="e-block e-block-centered e-block-skin e-bg-light-texture hp-customers" data-stellar-background-ratio="0.5">-->
+      <!--  {{ partial "customers.html" . }}-->
+      <!--</div>-->
+
+
+    </div>
 
     <!-- Google Map -->
     <a class="gm-toggle-link">

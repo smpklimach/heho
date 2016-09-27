@@ -1,14 +1,13 @@
 +++
 date = "2015-09-22T10:55:01+02:00"
 draft = false
-title = "RIDING BYTES"
-description = "Company ID: HRB732278"
+title = "Kloster Helfta"
+description = ""
 +++
 
-RIDING BYTES UG (haftungsbeschränkt)
+Zisterzienserinnenkloster St. Marien zu Helfta
 
-Einöde 49A, 87474 Buchenberg, Germany
+Lindenstraße 36, 06295 Lutherstadt Eisleben
 
-Mail: [hello@ridingbytes.com](mailto:hello@ridingbytes.com)
+Mail: [schwestern@kloster-helfta.de](mailto:schwestern@kloster-helfta.de)
 
-Web: [http://ridingbytes.com](http://ridingbytes.com)
