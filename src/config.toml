@@ -299,8 +299,8 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
             href = "/kloster"
             details = [
                 ["gelebte Hingabe"],
-                ["liebevolles Miteinander"],
-                ["kreative Offenheit"]
+                ["zisterziensische Spiritualität"],
+                ["Kloster der heiligen drei Mystikerinnen"]
             ]
         [[params.services.list]]
             title = "Gästehaus"
@@ -442,7 +442,7 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
         [[params.about.infos]]
             text = "Das Zisterzienserinnenkloster St. Marien zu Helfta ist ein Ort des Gebetes, der Begegnung und des Friedens."
         [[params.about.infos]]
-            text = "Als jüngstes Zisterzienserinnenkloster Deutschlands befindet sich Helfta in vielerlei Hinsicht noch im Aufbau und bietet Raum für kreative Köpfe, die ein modernes monastisches Leben führen möchten."
+            text = ""
 
 
     # contact information
