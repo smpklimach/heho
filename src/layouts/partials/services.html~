@@ -32,7 +32,7 @@
             </ul>
             {{ end }}
         </a>
-        <a class="btn btn-light btn-xs" href="{{ .href }}">Mehr erfahren</a>
+        <a class="btn btn-light btn-xs" href="{{ .href }}">Tell me more</a>
     </div>
     <!-- /service -->
     {{ end }}

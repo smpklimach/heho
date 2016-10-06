@@ -1,7 +1,7 @@
 +++
 date = "2016-02-27"
-title = "Alpenleder ERP"
-description = "Complete Enterprise Website and E-Commerce Solution"
+title = "Programm 2016"
+description = "Das komplette Programm des Gästehauses des Klosters Helfta"
 tags = ["odoo", "web"]
 img = "alpenleder.png"
 client = "Alpenleder"

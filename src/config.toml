@@ -36,10 +36,10 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
             title = "Zu Hause"
             href = "/"
             submenu = [
-                ["/#kloster", "Kloster"],
-                ["/#gaestehaus", "Gästehaus"],
+                ["/#services", "Zisterzienserinnenkloster"],
+                ["/#gertrudstift", "Gertrudstift"],
+                ["/#kinderhaus", "Montessori-Kinderhaus St. Marien"],
                 ["/#mechthildstift", "Caritas-Pflegezentrum St. Mechthild"],
-                ["/#kinderhaus", "Montessori Kinderhaus St. Marien"],
             ]
         [[params.navigation.list]]
             title = "Zu Gast"
@@ -57,16 +57,16 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
             ]
         [[params.navigation.list]]
             title = "Programm"
-            href = "/programm"
+            href = "Programm-2016.pdf"
         [[params.navigation.list]]
             title = "Aktuelles"
             href = "/aktuelles"
         [[params.navigation.list]]
             title = "Hintergründe"
-            href = "/about"
+            href = "/hintergruende"
         [[params.navigation.list]]
             title = "Kontakt"
-            href = "/contact"
+            href = "/kontakt"
 
 
     # main site sections
@@ -76,6 +76,12 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
         [params.sections.home]
             title = "Zu Hause"
             href = "/"
+
+	# zu Gast section /zugast
+	[params.sections.zugast]
+	    title = "Zu Gast"
+	    href = "/zugast"
+	    img = "gaestehaus.jpg"
 
         # blog section /aktuelles
         [params.sections.blog]
@@ -93,19 +99,19 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
         [params.sections.about]
             title = "Hintergründe"
             subtitle = "Das Kloster und seine Geschichte"
-            href = "/about"
+            href = "/hintergruende"
 
         # portfolio section /programm
         [params.sections.portfolio]
             title = "Programm"
             subtitle = "Kurse, Seminare, Exerzitien, Vorträge"
-            href = "/programm"
+            href = "Programm-2016.pdf"
 
         # contact section /kontakt
         [params.sections.contact]
             title = "Kontakt"
             subtitle = "Sagen Sie doch mal 'Hallo'"
-            href = "/contact"
+            href = "/kontakt"
 
         # 404 section /404
         [params.sections.fourohfour]
@@ -130,7 +136,7 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
                 description = "ZISTERZIENSERINNENKLOSTER ST. MARIEN"
                 start = "800"
                 y = "400"
-                cls = "font-accident-one fontcolor-invert"
+                cls = "font-accident-one-normal fontcolor-invert"
             [[params.slider.slides.layers]]
                 link = "Mehr erfahren"
                 href = "#services"
@@ -141,22 +147,22 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
         # slide 2
         [[params.slider.slides]]
            img = "slide-1.jpg"
-            alt = "modern mit mystischen Wurzeln"
+            alt = "Gertrudfenster - Moderne trifft Mystik"
             [[params.slider.slides.layers]]
                 title = "MODERNE TRIFFT MYSTIK"
                 start = "800"
                 y = "210"
-                cls = "font-accident-one-bold fontcolor-invert"
+                cls = "font-accident-one-bold-shadow fontcolor-invert"
             [[params.slider.slides.layers]]
-                description = "ARCHITEKTUR • GEBET • ARBEITSBEREICHE"
+                description = "IN ARCHITEKTUR UND GEBET"
                 start = "850"
                 y = "285"
-                cls = "font-accident-one-light fontcolor-invert"
+                cls = "font-accident-one-normal-shadow fontcolor-invert"
             [[params.slider.slides.layers]]
                 link = "Mehr erfahren"
-                href = "#services"
+                href = "/hintergruende"
                 start = "950"
-                y = "365"
+               y = "365"
                 cls = "page-scroll btn btn-lg btn-wh-str"
 
         # slide 3
@@ -167,12 +173,12 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
                 title = "OASE DER STILLE"
                 start = "800"
                 y = "210"
-                cls = "font-accident-one-bold fontcolor-invert"
+                cls = "font-accident-one-bold-shadow fontcolor-invert"
             [[params.slider.slides.layers]]
-                description = "EINKEHR • SAMMLUNG • GOTESSBEGEGNUNG"
+               description = "EINKEHR • SAMMLUNG • GOTTESBEGEGNUNG"
                 start = "850"
                 y = "285"
-                cls = "font-accident-one-light fontcolor-invert"
+                cls = "font-accident-one-normal-shadow fontcolor-invert"
             [[params.slider.slides.layers]]
                 link = "Mehr erfahren"
                 href = "#services"
@@ -290,48 +296,48 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
             title = "Kloster"
             description = "Zisterzienserinnen in Helfta"
             cls = "icon-box"
-            href = "/services/#development"
+            href = "/kloster"
             details = [
-                ["Gebet"],
-                ["Arbeit"],
-                ["Lectio Divina"]
+                ["gelebte Hingabe"],
+                ["liebevolles Miteinander"],
+                ["kreative Offenheit"]
             ]
         [[params.services.list]]
             title = "Gästehaus"
-            description = "Jeder soll empfangen werden wie Christus"
+            description = "Herzlich Willkommen!"
             cls = "icon-layers"
-            href = "/services/#uiux"
+            href = "/zugast"
             details = [
                 ["Gruppenreisen"],
                 ["Einzelgäste"],
                 ["Tagesausflügler"]
             ]
         [[params.services.list]]
-            title = "Pflegezentrum"
-            description = "Caritas Pflegezentrum St. Mechthild"
+            title = "Gertrudstift"
+            description = "Wohnung mieten in Helfta"
             cls = "icon-eye"
-            href = "/services/#consulting"
+            href = "/services/#gertrudstift"
             details = [
-                ["Pflege"],
-                ["Begleitung"],
-                ["Alter in Würde"]
+                ["einzigartige Nachbarschaft"],
+                ["besonderes Ambiente"],
+                ["nahe Einkaufsmöglichkeiten"]
             ]
         [[params.services.list]]
-            title = "Kinderhaus"
-            description = "Montessori-Kinderhaus St. Marien"
+            title = "Mechthildsaal"
+            description = "Feste feiern in Helfta"
             cls = "icon-server"
-            href = "/services/#administration"
+            href = "/services/#mechthildsaal"
             details = [
-                ["Erziehung"],
-                ["Förderung"],
-                ["Liebe"]
+                ["Hochzeiten"],
+                ["Konzerte"],
+                ["Geburtstage"]
             ]
 
 
-    # team
-    [params.team]
-        title = "Our amazing team"
-        description = "Potential is not a matter of size"
+    # gertrudstift
+    [params.gertrudstift]
+        title = "Wohnen in Helfta"
+        description = "Zur Miete leben in unmittelbarer Nähe zum Kloster"
         [[params.team.members]]
             img = "ramon.jpg"
             name = "Ramon Bartl"
@@ -436,7 +442,7 @@ copyright = "Copyright (c) 2016, Kloster Helfta"
         [[params.about.infos]]
             text = "Das Zisterzienserinnenkloster St. Marien zu Helfta ist ein Ort des Gebetes, der Begegnung und des Friedens."
         [[params.about.infos]]
-            text = "With over 10 years of experience in web development and consulting, we provide the right solutions for small, medium and large enterprises."
+            text = "Als jüngstes Zisterzienserinnenkloster Deutschlands befindet sich Helfta in vielerlei Hinsicht noch im Aufbau und bietet Raum für kreative Köpfe, die ein modernes monastisches Leben führen möchten."
 
 
     # contact information

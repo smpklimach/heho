@@ -409,13 +409,6 @@
   font-style: normal;
 }
 
-.font-accident-one-normal-shadow {
-  font-family: Novecentosanswide-Normal, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-    text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
-}
-
 /* Heading font two */
 .font-accident-two-normal {
   font-family: "Georgia", serif;
